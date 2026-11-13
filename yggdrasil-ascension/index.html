@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yggdrasil: Ascension</title>
+  <meta name="description" content="Yggdrasil: Ascension, a Norse roguelike deckbuilder for Android by Chincheck Software.">
+  <link rel="icon" href="assets/icon.webp">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --fg: #1f1d1a;
+      --muted: #5c574f;
+      --accent: #8a6a1f;
+      --rule: #ddd6c8;
+      --button: #8a3b2a;
+      --button-fg: #fbf6ec;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14130f;
+        --fg: #ebe6db;
+        --muted: #a39d90;
+        --accent: #d4b25e;
+        --rule: #36322a;
+        --button: #b5543d;
+        --button-fg: #fbf6ec;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 Georgia, "Times New Roman", serif;
+    }
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 3rem 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    header {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header img {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      margin: 0;
+    }
+    .tagline { margin: 0.25rem 0 0; color: var(--muted); }
+    .feature {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+    .intro { max-width: 40rem; display: flex; flex-direction: column; gap: 1rem; }
+    .intro p { margin: 0; }
+    .play {
+      align-self: flex-start;
+      display: inline-block;
+      background: var(--button);
+      color: var(--button-fg);
+      text-decoration: none;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .play:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+    }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 0.75rem;
+    }
+    .shots img { width: 100%; height: auto; border-radius: 6px; display: block; }
+    ul { padding-left: 1.25rem; margin: 0; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/icon.webp" alt="" width="96" height="96">
+    <div>
+      <h1>Yggdrasil: Ascension</h1>
+      <p class="tagline">A Norse roguelike deckbuilder for Android</p>
+    </div>
+  </header>
+
+  <img class="feature" src="assets/feature.webp" alt="Yggdrasil: Ascension: heroes, beasts and cards of the World Tree" width="1024" height="500">
+
+  <section class="intro">
+    <p>
+      Climb Yggdrasil, the World Tree, from its roots to its crown. Every run lays out a new path up the tree, through
+      fights, events, the Forge and the Mead Hall, to the beasts of Norse myth waiting at the top of each act.
+    </p>
+    <p>
+      Swing the axe as the Einherjar, a fallen warrior of Valhalla, or weave fate as the Völva, a seeress whose spirit
+      Ward fights at her side. Build a deck from the cards you earn on the way, and make every choice count: each one
+      has a price.
+    </p>
+    <p>
+      The game is played solo and plays fully offline, with no ads and no in-app purchases.
+    </p>
+    <p>
+      Signing in with Google Play Games is optional. If you sign in, the game uses your Play Games profile to
+      unlock achievements, post your weekly climb score to the leaderboard, add your runs to your Play Games
+      stats, and back up your progress to your Google account&rsquo;s Saved Games so you can continue on another
+      device. It asks for nothing else, and nothing is shared with anyone. See the
+      <a href="privacy-policy.html">privacy policy</a> for details.
+    </p>
+    <a class="play" href="https://play.google.com/store/apps/details?id=se.chinchecksoftware.yggdrasilascension">Get it on Google Play</a>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="assets/shot1.webp" alt="Climb the tree. Earn Valhalla." width="540" height="960" loading="lazy">
+      <img src="assets/shot2.webp" alt="Build a deck that breaks gods" width="540" height="960" loading="lazy">
+      <img src="assets/shot4.webp" alt="Weave fate as the Völva" width="540" height="960" loading="lazy">
+      <img src="assets/shot6.webp" alt="Swing the axe as the Einherjar" width="540" height="960" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy policy</a></li>
+      <li>Contact: <a href="mailto:chinchecksoftware@gmail.com">chinchecksoftware@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2026 Chincheck Software</footer>
+</main>
+</body>
+</html>
