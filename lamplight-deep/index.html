@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lamplight Deep</title>
+  <meta name="description" content="Lamplight Deep, a turn-based digging roguelike for Android by Chincheck Software.">
+  <link rel="icon" href="assets/icon.png">
+  <style>
+    /* One dark look, the game's own: the mine is always lit by a lamp. */
+    :root {
+      --bg: #0f0c0a;
+      --fg: #e9dfd0;
+      --muted: #a8998a;
+      --accent: #f2b45a;
+      --rule: #2e261f;
+      --button: #f2b45a;
+      --button-fg: #1a120a;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 3rem 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    header {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header img {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      image-rendering: pixelated;
+    }
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      margin: 0;
+      color: var(--accent);
+    }
+    .tagline { margin: 0.25rem 0 0; color: var(--muted); }
+    .feature, .shots img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+      image-rendering: pixelated;
+    }
+    .intro { max-width: 40rem; display: flex; flex-direction: column; gap: 1rem; }
+    .intro p { margin: 0; }
+    .soon {
+      align-self: flex-start;
+      background: var(--button);
+      color: var(--button-fg);
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--accent);
+    }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 0.75rem;
+    }
+    ul { padding-left: 1.25rem; margin: 0; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    footer { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/icon.png" alt="" width="96" height="96">
+    <div>
+      <h1>Lamplight Deep</h1>
+      <p class="tagline">A turn-based digging roguelike for Android</p>
+    </div>
+  </header>
+
+  <img class="feature" src="assets/feature.png" alt="Lamplight Deep: a miner with a lamp and a pick above the grass" width="1024" height="500">
+
+  <section class="intro">
+    <p>
+      Read the clues, dig by lamplight, and ride the last cage up with your gold. Every block holds something:
+      glints mean ore, cracks mean a hidden cave, heat means lava, scratches mean something that bites. Your lamp
+      shows the clues around you, and every dig costs oil.
+    </p>
+    <p>
+      The lift company wants its cut. Pay every quota, pack your tool belt each morning, collect relics that change
+      how you dig, and break the glowing Core at the bottom of the mine. It's played with one thumb, in short dives
+      of a few minutes.
+    </p>
+    <p>
+      The game is played solo and plays fully offline, with no ads and no in-app purchases.
+    </p>
+    <p>
+      Signing in with Google Play Games is optional. If you sign in, the game uses your Play Games profile to
+      unlock achievements, post your scores to the leaderboards, add your games to your Play Games stats, and
+      back up your progress to your Google account&rsquo;s Saved Games so you can continue on another device.
+      It asks for nothing else, and nothing is shared with anyone. See the
+      <a href="privacy-policy.html">privacy policy</a> for details.
+    </p>
+    <p class="soon">Coming soon to Google Play</p>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="assets/1_read_the_rock.png" alt="Read the rock: every block hides something, and your lamp shows the clues" width="1080" height="1920" loading="lazy">
+      <img src="assets/2_find_whats_hidden.png" alt="Find what's hidden" width="1080" height="1920" loading="lazy">
+      <img src="assets/3_build_your_game.png" alt="Build your game" width="1080" height="1920" loading="lazy">
+      <img src="assets/5_reach_the_core.png" alt="Reach the Core" width="1080" height="1920" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy policy</a></li>
+      <li>Contact: <a href="mailto:chinchecksoftware@gmail.com">chinchecksoftware@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2026 Chincheck Software</footer>
+</main>
+</body>
+</html>
